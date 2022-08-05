@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAEA,AAAA,qBAAqB,CAAC;EACpB,QAAQ,EAAE,QAAQ;ECIlB,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;EDJvB,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,KAAK;CAYnB;;AAhBD,AAKE,qBALmB,CAKnB,EAAE,CAAC;EACD,cAAc,EAAE,UAAU;EAC1B,SAAS,EAAE,IAAI;EACf,aAAa,EAAE,IAAI;CACpB;;AATH,AAUE,qBAVmB,CAUnB,CAAC,CAAC;EACA,SAAS,EAAE,IAAI;EACf,SAAS,EAAE,MAAM;EACjB,UAAU,EAAE,MAAM;EAClB,aAAa,EAAE,KAAK;CACrB",
     "sources": [
-        "AgentSelect.module.scss"
+        "AgentSelect.module.scss",
+        "../../styles/_variables.scss"
     ],
     "names": [],
     "file": "AgentSelect.module.css"

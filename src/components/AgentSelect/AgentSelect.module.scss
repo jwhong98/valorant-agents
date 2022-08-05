@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+
+.agentSelectContainer {
+  position: relative;
+  @include centerFlex;
+  flex-direction: column;
+  padding-top: 200px;
+  h2 {
+    text-transform: capitalize;
+    font-size: 36px;
+    margin-bottom: 45px;
+  }
+  p {
+    font-size: 20px;
+    max-width: 1000px;
+    text-align: center;
+    margin-bottom: 120px;
+  }
+}

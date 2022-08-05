@@ -2,8 +2,9 @@ button {
   border: none;
   outline: none;
   background: #0f1823;
-  max-width: 177px;
-  max-height: 177px;
+  width: 177px;
+  height: 177px;
+  padding: 10px;
   cursor: pointer;
 }
 
@@ -12,9 +13,9 @@ button img {
   height: auto;
 }
 
-.slide_bck_tl {
-  -webkit-animation: slide_bck_tl 0.45s cubic-bezier(0.47, 0, 0.745, 0.715) both;
-  animation: slide_bck_tl 0.45s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+.slide-bck-tl {
+  -webkit-animation: slide-bck-tl 0.45s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: slide-bck-tl 0.45s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
 
 /* ----------------------------------------------
@@ -28,7 +29,7 @@ button img {
  * animation slide-bck-tl
  * ----------------------------------------
  */
-@-webkit-keyframes slide_bck_tl {
+@-webkit-keyframes slide-bck-tl {
   0% {
     -webkit-transform: translateZ(0) translateY(0) translateX(0);
     transform: translateZ(0) translateY(0) translateX(0);
@@ -39,7 +40,7 @@ button img {
   }
 }
 
-@keyframes slide_bck_tl {
+@keyframes slide-bck-tl {
   0% {
     -webkit-transform: translateZ(0) translateY(0) translateX(0);
     transform: translateZ(0) translateY(0) translateX(0);

@@ -1,0 +1,13 @@
+@import "../../styles/variables";
+
+button {
+  border: 1px solid $primary;
+  outline: none;
+  background: transparent;
+  width: 130px;
+  height: 130px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -5,7 +5,7 @@ const Button = (props) => {
   //   const onClick = (e) => {};
   return (
     <button>
-      <img src={props.img} alt="role" />
+      <img src={props.img} alt={props.role} />
     </button>
   );
 };
