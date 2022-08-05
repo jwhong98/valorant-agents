@@ -1,0 +1,17 @@
+//layout
+@mixin centerAlignFlex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin centerFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//height
+$remainingHeight: calc(100vh - 80px);
+
+//colors
+$primary: #0f1823;

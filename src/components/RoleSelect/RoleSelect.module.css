@@ -1,0 +1,12 @@
+.roleSelect {
+  height: calc(100vh - 80px);
+  text-align: center;
+  padding-top: 140px;
+}
+
+.roleSelect h2 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 140px;
+}
+/*# sourceMappingURL=RoleSelect.module.css.map */
