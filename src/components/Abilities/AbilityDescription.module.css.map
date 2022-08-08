@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,mBAAmB,CAAC;EAClB,WAAW,EAAE,GAAG;EAChB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,GAAG,EAAE,IAAI;CACV",
+    "sources": [
+        "AbilityDescription.module.scss"
+    ],
+    "names": [],
+    "file": "AbilityDescription.module.css"
+}
