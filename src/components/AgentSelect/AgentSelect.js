@@ -12,6 +12,7 @@ const AgentSelect = (props) => {
         key={info.uuid}
         agent={info.displayName}
         img={info.displayIcon}
+        onClick={props.onClick}
       />
     );
   };

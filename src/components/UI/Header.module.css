@@ -10,4 +10,8 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+.header h1 {
+  cursor: pointer;
+}
 /*# sourceMappingURL=Header.module.css.map */

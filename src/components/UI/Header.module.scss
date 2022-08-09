@@ -6,4 +6,8 @@
   background-color: grey;
   padding: 0 40px;
   @include centerAlignFlex;
+
+  h1 {
+    cursor: pointer;
+  }
 }

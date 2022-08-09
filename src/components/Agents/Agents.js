@@ -8,6 +8,8 @@ import classes from "./Agents.module.css";
 
 const Agents = () => {
   const [agents, setAgents] = useState();
+  const [selectedAgent, setSelectedAgent] = useState({});
+  const [agentSelected, setAgentSelected] = useState(false);
   const [error, setError] = useState(null);
   const [role, setRole] = useState("");
   const [roleSelected, setRoleSelected] = useState(false);
@@ -36,6 +38,12 @@ const Agents = () => {
     setRoleSelected(true);
   };
 
+  const onAgentSelect = (a) => {
+    let agent = agents.filter((item) => item.displayName === a);
+    setSelectedAgent(agent);
+    setAgentSelected(true);
+  };
+
   if (error) {
     return <div>Error: {error.message}</div>;
   } else if (!isLoaded) {
@@ -43,15 +51,17 @@ const Agents = () => {
   } else {
     return (
       <React.Fragment>
-        <Header />
+        <Header resetRole={setRoleSelected} resetAgent={setAgentSelected} />
         <Wrapper>
           {!roleSelected ? (
             <RoleSelect onClick={onRoleSelect} />
+          ) : roleSelected && agentSelected ? (
+            <AgentInfo data={selectedAgent[0]} />
           ) : (
-            agents && <AgentSelect role={role} data={agents} />
+            agents && (
+              <AgentSelect role={role} data={agents} onClick={onAgentSelect} />
+            )
           )}
-
-          {/* <AgentInfo data={agents[0]} /> */}
         </Wrapper>
       </React.Fragment>
     );

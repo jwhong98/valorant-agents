@@ -1,10 +1,14 @@
 import React from "react";
 import classes from "./Header.module.css";
 
-const Header = () => {
+const Header = (props) => {
+  const onClickHandler = () => {
+    props.resetRole(false);
+    props.resetAgent(false);
+  };
   return (
     <div className={classes.header}>
-      <h1>ValorAgents</h1>
+      <h1 onClick={onClickHandler}>ValorAgents</h1>
     </div>
   );
 };
