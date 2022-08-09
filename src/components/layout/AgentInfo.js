@@ -1,6 +1,5 @@
 import React from "react";
 import Abilities from "../Abilities/Abilities";
-import AgentSelect from "../AgentSelect/AgentSelect";
 import classes from "./AgentInfo.module.css";
 
 const AgentInfo = ({ data }) => {
@@ -19,10 +18,6 @@ const AgentInfo = ({ data }) => {
             <p>{data.description}</p>
           </div>
           <Abilities data={data.abilities} />
-          <div className={classes.infoWrap__abilitiesInfo}>
-            <h3></h3>
-            <p></p>
-          </div>
         </div>
       </div>
     </section>

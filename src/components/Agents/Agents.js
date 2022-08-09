@@ -7,19 +7,20 @@ import Header from "../UI/Header";
 import classes from "./Agents.module.css";
 
 const Agents = () => {
-  const [agents, setAgents] = useState([]);
+  const [agents, setAgents] = useState();
   const [error, setError] = useState(null);
+  const [role, setRole] = useState("");
+  const [roleSelected, setRoleSelected] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
   useEffect(() => {
     fetch("https://valorant-api.com/v1/agents")
       .then((res) => res.json())
       .then(
         (result) => {
-          //temp
           const filtered = result.data.filter(
             (agent) =>
               agent.isPlayableCharacter === true &&
-              agent.role.displayName === "Duelist"
+              agent.role.displayName === role
           );
           setIsLoaded(true);
           setAgents(filtered);
@@ -28,7 +29,12 @@ const Agents = () => {
           setError(error);
         }
       );
-  }, []);
+  }, [role]);
+
+  const onRoleSelect = (r) => {
+    setRole(r);
+    setRoleSelected(true);
+  };
 
   if (error) {
     return <div>Error: {error.message}</div>;
@@ -39,13 +45,13 @@ const Agents = () => {
       <React.Fragment>
         <Header />
         <Wrapper>
-          {/* <RoleSelect /> */}
-          {/* <AgentSelect
-            role="duelist"
-            roleDescription="Duelists are the offensive experts in VALORANT with abilities that allow them to be aggressive and self-sufficient when creating opportunities to engage with opponents"
-            data={agents}
-          /> */}
-          <AgentInfo data={agents[0]} />
+          {!roleSelected ? (
+            <RoleSelect onClick={onRoleSelect} />
+          ) : (
+            agents && <AgentSelect role={role} data={agents} />
+          )}
+
+          {/* <AgentInfo data={agents[0]} /> */}
         </Wrapper>
       </React.Fragment>
     );
