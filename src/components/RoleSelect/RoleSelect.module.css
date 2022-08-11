@@ -2,7 +2,6 @@
   height: calc(100vh - 80px);
   text-align: center;
   padding-top: 140px;
-  position: relative;
 }
 
 .roleSelect h2 {

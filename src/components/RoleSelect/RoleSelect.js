@@ -7,7 +7,7 @@ const RoleSelect = (props) => {
   return (
     <section className={classes.roleSelect}>
       <h2>Select Your Role</h2>
-      <RoleSelection onClick={props.onClick} default={true} />
+      <RoleSelection onClick={props.onRoleSelect} default={true} />
     </section>
   );
 };

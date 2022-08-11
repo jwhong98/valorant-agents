@@ -58,12 +58,17 @@ const Agents = () => {
         />
         <Wrapper>
           {!roleSelected ? (
-            <RoleSelect onClick={onRoleSelect} />
+            <RoleSelect onRoleSelect={onRoleSelect} />
           ) : roleSelected && agentSelected ? (
             <AgentInfo data={selectedAgent[0]} />
           ) : (
             agents && (
-              <AgentSelect role={role} data={agents} onClick={onAgentSelect} />
+              <AgentSelect
+                role={role}
+                data={agents}
+                onAgentSelect={onAgentSelect}
+                onRoleSelect={onRoleSelect}
+              />
             )
           )}
         </Wrapper>
