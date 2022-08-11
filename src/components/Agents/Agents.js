@@ -51,7 +51,11 @@ const Agents = () => {
   } else {
     return (
       <React.Fragment>
-        <Header resetRole={setRoleSelected} resetAgent={setAgentSelected} />
+        <Header
+          resetRole={setRoleSelected}
+          resetAgentSelected={setAgentSelected}
+          resetAgents={setAgents}
+        />
         <Wrapper>
           {!roleSelected ? (
             <RoleSelect onClick={onRoleSelect} />

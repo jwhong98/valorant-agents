@@ -1,5 +1,14 @@
 .abilityButton {
   max-width: 96px;
   max-height: 96px;
+  background: #0f1823;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+
+.abilityButton img {
+  width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=AbilityButton.module.css.map */

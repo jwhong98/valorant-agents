@@ -4,3 +4,8 @@
   @include centerFlex;
   gap: 96px;
 }
+
+.selectionSmall {
+  @include centerFlex;
+  gap: 43px;
+}

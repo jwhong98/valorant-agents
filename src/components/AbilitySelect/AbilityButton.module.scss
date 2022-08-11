@@ -1,4 +1,15 @@
+@import "../../styles/variables";
+
 .abilityButton {
   max-width: 96px;
   max-height: 96px;
+  background: $primary;
+  border: none;
+  outline: none;
+  padding: 10px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }

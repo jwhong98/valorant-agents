@@ -4,7 +4,8 @@ import classes from "./Header.module.css";
 const Header = (props) => {
   const onClickHandler = () => {
     props.resetRole(false);
-    props.resetAgent(false);
+    props.resetAgentSelected(false);
+    // props.resetAgents([]);
   };
   return (
     <div className={classes.header}>

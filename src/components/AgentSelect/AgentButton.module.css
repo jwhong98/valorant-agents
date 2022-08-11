@@ -1,4 +1,4 @@
-button {
+.agentButton {
   border: 1px solid #0f1823;
   outline: none;
   background: transparent;
@@ -6,7 +6,7 @@ button {
   height: 130px;
 }
 
-button img {
+.agentButton img {
   width: 100%;
   height: auto;
 }

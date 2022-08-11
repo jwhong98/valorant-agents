@@ -6,7 +6,11 @@ const AgentButton = (props) => {
     props.onClick(props.agent);
   };
   return (
-    <button onClick={onClickHandler} agent={props.agent}>
+    <button
+      className={classes.agentButton}
+      onClick={onClickHandler}
+      agent={props.agent}
+    >
       <img src={props.img} alt={props.agent} />
     </button>
   );

@@ -7,7 +7,11 @@ const Button = (props) => {
     props.onClick(e.currentTarget.role);
   };
   return (
-    <button onClick={onClickHandler} role={props.role}>
+    <button
+      className={props.default ? "" : classes.smallButton}
+      onClick={onClickHandler}
+      role={props.role}
+    >
       <img src={props.img} alt={props.role} />
     </button>
   );

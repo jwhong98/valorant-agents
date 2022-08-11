@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,cAAc,CAAC;EACb,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,IAAI;CACjB",
+    "mappings": "AAEA,AAAA,cAAc,CAAC;EACb,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,IAAI;EAChB,UAAU,ECWF,OAAO;EDVf,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;EACb,OAAO,EAAE,IAAI;CAMd;;AAZD,AAQE,cARY,CAQZ,GAAG,CAAC;EACF,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACb",
     "sources": [
-        "AbilityButton.module.scss"
+        "AbilityButton.module.scss",
+        "../../styles/_variables.scss"
     ],
     "names": [],
     "file": "AbilityButton.module.css"
