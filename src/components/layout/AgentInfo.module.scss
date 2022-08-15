@@ -3,6 +3,7 @@
 .agentInfo {
   height: $remainingHeight;
   display: flex;
+  position: relative;
 }
 .gridContainer {
   max-height: 600px;

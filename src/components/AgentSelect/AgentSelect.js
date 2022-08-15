@@ -9,7 +9,11 @@ const AgentSelect = (props) => {
       <RoleSelection default={false} onClick={props.onRoleSelect} />
       <h2>{props.role}</h2>
       {props.data[0] && <p>{props.data[0].role.description}</p>}
-      <AgentSelection data={props.data} onAgentSelect={props.onAgentSelect} />
+      <AgentSelection
+        default={true}
+        data={props.data}
+        onAgentSelect={props.onAgentSelect}
+      />
     </section>
   );
 };

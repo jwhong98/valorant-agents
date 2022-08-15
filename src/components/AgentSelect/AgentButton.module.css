@@ -10,4 +10,17 @@
   width: 100%;
   height: auto;
 }
+
+.agentButtonSmall {
+  width: 58px;
+  height: 70px;
+  padding: 0;
+  background: transparent;
+  outline: none;
+}
+
+.agentButtonSmall img {
+  width: 100%;
+  height: auto;
+}
 /*# sourceMappingURL=AgentButton.module.css.map */

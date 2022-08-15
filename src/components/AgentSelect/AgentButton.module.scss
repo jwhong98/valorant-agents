@@ -11,3 +11,16 @@
     height: auto;
   }
 }
+
+.agentButtonSmall {
+  width: 58px;
+  height: 70px;
+  padding: 0;
+  background: transparent;
+  // border: 1px solid $primary;
+  outline: none;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

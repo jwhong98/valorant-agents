@@ -60,7 +60,11 @@ const Agents = () => {
           {!roleSelected ? (
             <RoleSelect onRoleSelect={onRoleSelect} />
           ) : roleSelected && agentSelected ? (
-            <AgentInfo data={selectedAgent[0]} />
+            <AgentInfo
+              agent={selectedAgent[0]}
+              data={agents}
+              onAgentSelect={onAgentSelect}
+            />
           ) : (
             agents && (
               <AgentSelect
