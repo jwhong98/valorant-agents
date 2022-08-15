@@ -3,7 +3,6 @@ import classes from "./RoleSelect.module.css";
 import RoleSelection from "./RoleSelection";
 
 const RoleSelect = (props) => {
-  console.log("RoleSelect rendered");
   return (
     <section className={classes.roleSelect}>
       <h2>Select Your Role</h2>
