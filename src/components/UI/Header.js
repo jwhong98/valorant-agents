@@ -5,7 +5,7 @@ const Header = (props) => {
   const onClickHandler = () => {
     props.resetRole(false);
     props.resetAgentSelected(false);
-    // props.resetAgents([]);
+    // props.resetAgents();
   };
   return (
     <div className={classes.header}>

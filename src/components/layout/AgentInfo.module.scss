@@ -40,8 +40,10 @@
     align-items: center;
 
     img {
-      width: 81px;
-      height: 81px;
+      width: 60px;
+      height: 60px;
+      background: $primary;
+      padding: 5px;
     }
 
     h2 {

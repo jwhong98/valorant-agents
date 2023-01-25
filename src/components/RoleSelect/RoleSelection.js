@@ -16,24 +16,28 @@ const RoleSelection = (props) => {
           img={controller}
           role="Controller"
           onClick={props.onClick}
+          activeRole={props.activeRole}
         />
         <Button
           default={props.default}
           img={initiator}
           role="Initiator"
           onClick={props.onClick}
+          activeRole={props.role}
         />
         <Button
           default={props.default}
           img={duelist}
           role="Duelist"
           onClick={props.onClick}
+          activeRole={props.role}
         />
         <Button
           default={props.default}
           img={sentinel}
           role="Sentinel"
           onClick={props.onClick}
+          activeRole={props.role}
         />
       </Selection>
     </div>

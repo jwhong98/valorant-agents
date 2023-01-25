@@ -13,7 +13,7 @@ const AgentInfo = (props) => {
       />
       <div className={classes.gridContainer}>
         <div className={classes.imgWrap}>
-          <img src={props.agent.fullPortraitV2} alt="" />
+          <img src={props.agent.fullPortrait} alt="" />
         </div>
         <div className={classes.infoWrap}>
           <div className={classes.infoWrap__header}>

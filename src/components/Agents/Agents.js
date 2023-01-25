@@ -24,6 +24,7 @@ const Agents = () => {
               agent.isPlayableCharacter === true &&
               agent.role.displayName === role
           );
+          setAgents(filtered);
           setIsLoaded(true);
           setAgents(filtered);
         },
@@ -58,7 +59,7 @@ const Agents = () => {
         />
         <Wrapper>
           {!roleSelected ? (
-            <RoleSelect onRoleSelect={onRoleSelect} />
+            <RoleSelect onRoleSelect={onRoleSelect} activeRole={role} />
           ) : roleSelected && agentSelected ? (
             <AgentInfo
               agent={selectedAgent[0]}

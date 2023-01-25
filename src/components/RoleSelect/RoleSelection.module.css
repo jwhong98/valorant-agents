@@ -1,6 +1,10 @@
 .roleSelectionSmall {
   position: absolute;
   left: 0;
-  top: 80px;
+  top: 40px;
+}
+
+.active {
+  opacity: 50%;
 }
 /*# sourceMappingURL=RoleSelection.module.css.map */

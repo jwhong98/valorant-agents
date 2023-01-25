@@ -8,7 +8,7 @@ const AbilitySelect = (props) => {
   };
   return (
     <article className={classes.abilitySelect}>
-      {props.data.map(createButton)}
+      {props.data.map((el) => (el.slot !== "Passive" ? createButton(el) : ""))}
     </article>
   );
 };
