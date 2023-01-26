@@ -38,18 +38,23 @@
   &__header {
     display: flex;
     align-items: center;
+    background: $primary;
+    padding: 5px;
 
     img {
       width: 60px;
       height: 60px;
-      background: $primary;
+      // background: $background;
+      border: 1px solid $primary;
+
       padding: 5px;
     }
 
     h2 {
       width: 100%;
       text-align: center;
-      font-size: 36px;
+      font-size: 3rem;
+      color: $background;
     }
   }
 

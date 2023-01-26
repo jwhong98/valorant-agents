@@ -8,7 +8,7 @@ const AbilityButton = (props) => {
   };
   return (
     <button
-      className={classes.abilityButton}
+      className={`${classes.abilityButton} ${classes.bg_slider}`}
       key={props.slot}
       onClick={onClickHandler}
     >

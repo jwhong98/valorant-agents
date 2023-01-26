@@ -8,7 +8,7 @@ const Button = (props) => {
   };
   return (
     <button
-      className={`${props.default ? "" : classes.smallButton} ${
+      className={`${props.default ? classes.button : classes.smallButton} ${
         !props.default && props.activeRole === props.role ? classes.active : ""
       }`}
       onClick={onClickHandler}

@@ -12,7 +12,10 @@ const AgentInfo = (props) => {
         onAgentSelect={props.onAgentSelect}
       />
       <div className={classes.gridContainer}>
-        <div className={classes.imgWrap}>
+        <div
+          className={classes.imgWrap}
+          style={{ backgroundImage: `url(${props.agent.full})` }}
+        >
           <img src={props.agent.fullPortrait} alt="" />
         </div>
         <div className={classes.infoWrap}>

@@ -6,17 +6,26 @@
   background: transparent;
   width: 130px;
   height: 130px;
+  padding: 10px;
+  cursor: pointer;
   img {
     width: 100%;
     height: auto;
   }
 }
 
+.agentButton:hover,
+.agentButtonSmall:hover {
+  transform: scale(1.1);
+}
+
 .agentButtonSmall {
-  width: 58px;
+  border: 1px solid $primary;
+  width: 70px;
   height: 70px;
-  padding: 0;
+  padding: 5px;
   background: transparent;
+  cursor: pointer;
   // border: 1px solid $primary;
   outline: none;
   img {
