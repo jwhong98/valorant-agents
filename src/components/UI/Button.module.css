@@ -21,6 +21,7 @@
   height: 70px;
   padding: 10px;
   cursor: pointer;
+  opacity: 50%;
 }
 
 .smallButton img {
@@ -29,11 +30,12 @@
 }
 
 .active {
-  opacity: 50%;
+  opacity: 1;
 }
 
 .button:hover,
 .smallButton:hover {
   background: #ff4655;
+  opacity: 1;
 }
 /*# sourceMappingURL=Button.module.css.map */

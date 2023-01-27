@@ -6,11 +6,6 @@ import classes from "./AgentInfo.module.css";
 const AgentInfo = (props) => {
   return (
     <section className={classes.agentInfo}>
-      <AgentSelection
-        data={props.data}
-        default={false}
-        onAgentSelect={props.onAgentSelect}
-      />
       <div className={classes.gridContainer}>
         <div
           className={classes.imgWrap}
@@ -32,6 +27,11 @@ const AgentInfo = (props) => {
           <Abilities data={props.agent.abilities} />
         </div>
       </div>
+      <AgentSelection
+        data={props.data}
+        default={false}
+        onAgentSelect={props.onAgentSelect}
+      />
     </section>
   );
 };
