@@ -31,6 +31,7 @@ const AgentInfo = (props) => {
         data={props.data}
         default={false}
         onAgentSelect={props.onAgentSelect}
+        activeAgent={props.agent.displayName}
       />
     </section>
   );
