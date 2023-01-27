@@ -12,6 +12,7 @@ const AgentSelection = (props) => {
         img={info.displayIcon}
         onClick={props.onAgentSelect}
         default={props.default}
+        activeAgent={props.activeAgent}
       />
     );
   };

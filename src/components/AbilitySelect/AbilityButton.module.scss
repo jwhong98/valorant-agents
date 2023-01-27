@@ -9,6 +9,7 @@
   padding: 10px;
   animation: leave 0.4s forwards;
   overflow: hidden;
+  opacity: 50%;
   cursor: pointer;
 
   img {
@@ -24,6 +25,10 @@
   }
 }
 
+.active {
+  opacity: 1;
+}
+
 .bg_slider {
   overflow: hidden;
 }
@@ -35,17 +40,17 @@
 @keyframes hover {
   from {
     box-shadow: inset 0 0 0 0.01px $red;
+    opacity: 50%;
   }
   to {
     box-shadow: inset 8.79928em 0 0 0.01px $red;
-    color: #fff;
+    opacity: 1;
   }
 }
 
 @keyframes leave {
   from {
     box-shadow: inset 8.79928em 0 0 0.01px $red;
-    color: #fff;
   }
   to {
     box-shadow: inset 0 0 0 0.01px $red;

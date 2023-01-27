@@ -7,7 +7,9 @@ const AgentButton = (props) => {
   };
   return (
     <button
-      className={props.default ? classes.agentButton : classes.agentButtonSmall}
+      className={`${
+        props.default ? classes.agentButton : classes.agentButtonSmall
+      } ${props.activeAgent === props.agent ? classes.active : ""}`}
       onClick={onClickHandler}
       agent={props.agent}
     >

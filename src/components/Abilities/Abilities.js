@@ -11,7 +11,7 @@ const Abilities = (props) => {
 
   return (
     <div className={classes.abilities}>
-      <AbilitySelect data={props.data} onClick={onClick} />
+      <AbilitySelect data={props.data} onClick={onClick} activeSlot={slot} />
       <AbilityDescription data={props.data} slot={slot} />
     </div>
   );

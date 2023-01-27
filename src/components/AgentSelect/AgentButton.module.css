@@ -2,8 +2,8 @@
   border: 1px solid #0f1823;
   outline: none;
   background: transparent;
-  width: 130px;
-  height: 130px;
+  width: 150px;
+  height: 150px;
   padding: 10px;
   cursor: pointer;
 }
@@ -25,6 +25,7 @@
   height: 70px;
   padding: 5px;
   background: transparent;
+  opacity: 50%;
   cursor: pointer;
   outline: none;
 }
@@ -32,5 +33,9 @@
 .agentButtonSmall img {
   width: 100%;
   height: auto;
+}
+
+.active {
+  opacity: 1;
 }
 /*# sourceMappingURL=AgentButton.module.css.map */

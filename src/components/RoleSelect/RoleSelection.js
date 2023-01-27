@@ -23,21 +23,21 @@ const RoleSelection = (props) => {
           img={initiator}
           role="Initiator"
           onClick={props.onClick}
-          activeRole={props.role}
+          activeRole={props.activeRole}
         />
         <Button
           default={props.default}
           img={duelist}
           role="Duelist"
           onClick={props.onClick}
-          activeRole={props.role}
+          activeRole={props.activeRole}
         />
         <Button
           default={props.default}
           img={sentinel}
           role="Sentinel"
           onClick={props.onClick}
-          activeRole={props.role}
+          activeRole={props.activeRole}
         />
       </Selection>
     </div>
