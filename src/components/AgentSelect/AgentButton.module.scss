@@ -9,14 +9,17 @@
   padding: 10px;
   cursor: pointer;
   img {
-    width: 100%;
-    height: auto;
+    @include grayImg;
   }
 }
 
 .agentButton:hover,
 .agentButtonSmall:hover {
   transform: scale(1.1);
+
+  img {
+    filter: grayscale(0);
+  }
 }
 
 .agentButtonSmall {
@@ -30,11 +33,13 @@
   // border: 1px solid $primary;
   outline: none;
   img {
-    width: 100%;
-    height: auto;
+    @include grayImg;
   }
 }
 
 .active {
   opacity: 1;
+  img {
+    filter: grayscale(0);
+  }
 }

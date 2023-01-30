@@ -10,6 +10,12 @@
   justify-content: center;
 }
 
+@mixin grayImg {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+}
+
 //height
 $remainingHeight: calc(100vh - 80px);
 

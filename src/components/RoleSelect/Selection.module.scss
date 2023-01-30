@@ -1,11 +1,14 @@
 @import "../../styles/variables";
 
-.selectionContainer {
+.selectionContainer,
+.selectionSmall {
   @include centerFlex;
+}
+
+.selectionContainer {
   gap: 96px;
 }
 
 .selectionSmall {
-  @include centerFlex;
   gap: 31px;
 }
