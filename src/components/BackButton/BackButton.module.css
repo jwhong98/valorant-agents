@@ -1,0 +1,66 @@
+.backBtn {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100px;
+  background: transparent;
+  outline: none;
+  border: 1px solid #0f1823;
+  cursor: pointer;
+  -webkit-animation: leave 0.4s forwards;
+          animation: leave 0.4s forwards;
+}
+
+.bg_slider {
+  overflow: hidden;
+}
+
+.bg_slider:hover {
+  -webkit-animation: hover 0.4s forwards;
+          animation: hover 0.4s forwards;
+}
+
+@-webkit-keyframes hover {
+  from {
+    -webkit-box-shadow: inset 0 0 0 0.01px #ff4655;
+            box-shadow: inset 0 0 0 0.01px #ff4655;
+  }
+  to {
+    -webkit-box-shadow: inset 8.79928em 0 0 0.01px #ff4655;
+            box-shadow: inset 8.79928em 0 0 0.01px #ff4655;
+  }
+}
+
+@keyframes hover {
+  from {
+    -webkit-box-shadow: inset 0 0 0 0.01px #ff4655;
+            box-shadow: inset 0 0 0 0.01px #ff4655;
+  }
+  to {
+    -webkit-box-shadow: inset 8.79928em 0 0 0.01px #ff4655;
+            box-shadow: inset 8.79928em 0 0 0.01px #ff4655;
+  }
+}
+
+@-webkit-keyframes leave {
+  from {
+    -webkit-box-shadow: inset 8.79928em 0 0 0.01px #ff4655;
+            box-shadow: inset 8.79928em 0 0 0.01px #ff4655;
+  }
+  to {
+    -webkit-box-shadow: inset 0 0 0 0.01px #ff4655;
+            box-shadow: inset 0 0 0 0.01px #ff4655;
+  }
+}
+
+@keyframes leave {
+  from {
+    -webkit-box-shadow: inset 8.79928em 0 0 0.01px #ff4655;
+            box-shadow: inset 8.79928em 0 0 0.01px #ff4655;
+  }
+  to {
+    -webkit-box-shadow: inset 0 0 0 0.01px #ff4655;
+            box-shadow: inset 0 0 0 0.01px #ff4655;
+  }
+}
+/*# sourceMappingURL=BackButton.module.css.map */

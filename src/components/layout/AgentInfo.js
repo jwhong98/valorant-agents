@@ -1,11 +1,13 @@
 import React from "react";
 import Abilities from "../Abilities/Abilities";
 import AgentSelection from "../AgentSelect/AgentSelection";
+import BackButton from "../BackButton/BackButton";
 import classes from "./AgentInfo.module.css";
 
 const AgentInfo = (props) => {
   return (
     <section className={classes.agentInfo}>
+      <BackButton />
       <div className={classes.gridContainer}>
         <div
           className={classes.imgWrap}
