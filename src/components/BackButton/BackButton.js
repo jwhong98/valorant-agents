@@ -11,7 +11,13 @@ const BackButton = (props) => {
       className={`${classes.backBtn} ${classes.bg_slider}`}
       onClick={onClickHandler}
     >
-      <ArrowBackIcon sx={{ fontSize: 60 }} />
+      <ArrowBackIcon
+        sx={{
+          width: 100,
+          height: 60,
+          "&:hover": { color: "white" },
+        }}
+      />
     </button>
   );
 };
