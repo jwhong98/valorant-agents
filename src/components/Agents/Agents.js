@@ -4,7 +4,6 @@ import AgentInfo from "../layout/AgentInfo";
 import Wrapper from "../layout/Wrapper";
 import RoleSelect from "../RoleSelect/RoleSelect";
 import Header from "../UI/Header";
-import classes from "./Agents.module.css";
 
 const Agents = () => {
   const [agents, setAgents] = useState();
@@ -65,6 +64,7 @@ const Agents = () => {
               agent={selectedAgent[0]}
               data={agents}
               onAgentSelect={onAgentSelect}
+              resetAgentSelected={setAgentSelected}
             />
           ) : (
             agents && (

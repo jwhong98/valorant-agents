@@ -7,7 +7,7 @@ import classes from "./AgentInfo.module.css";
 const AgentInfo = (props) => {
   return (
     <section className={classes.agentInfo}>
-      <BackButton />
+      <BackButton onClick={props.resetAgentSelected} />
       <div className={classes.gridContainer}>
         <div
           className={classes.imgWrap}

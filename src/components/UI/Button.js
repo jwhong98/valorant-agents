@@ -4,8 +4,6 @@ import classes from "./Button.module.css";
 const Button = (props) => {
   const onClickHandler = (e) => {
     e.preventDefault();
-    console.log("active:" + props.activeRole);
-    console.log(props.role);
     props.onClick(e.currentTarget.dataset.role);
   };
   return (
